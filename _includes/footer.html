@@ -10,12 +10,9 @@
   <p>
     {{- '©' }}
     <time>{{ 'now' | date: '%Y' }}</time>
-
-    {% if site.social.links %}
-      <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
-    {% else %}
-      <em class="fst-normal">{{ site.social.name }}</em>.
-    {% endif %}
+    <a href="https://github.com/bobaej1n" target="_blank" rel="noopener">
+      bobaejin
+    </a>
 
     {% if site.data.locales[include.lang].copyright.brief %}
       <span
