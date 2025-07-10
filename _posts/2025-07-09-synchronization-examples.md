@@ -8,7 +8,6 @@ tags: [OS, Operating System]
 pin: false
 image:
   path: /assets/img/resources/os_cover.png
-  alt: OS cover img
 ---
 
 ## 1. 고전적인 동기화 문제들
