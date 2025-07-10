@@ -123,7 +123,8 @@ n개의 버퍼로 구성된 풀(pool)이 있으며 각 버퍼는 한 항목(item
 ---
 
 ### 3) 식사하는 철학자들 문제 (The Dininng-Philosophers Problem)
-![dining_philosophers](/assets/img/resources/250710/dining_philosophers.png){: w-50 .left}
+<img src="/assets/img/resources/250710/dining_philosophers.png" alt="dining_philosophers" style="display: block; margin: auto;" width="300" height="300">
+
 5명의 철학자가 원형 테이블에 앉아 있고, 포크가 각 철학자 사이에 놓여있다. 철학자가 생각할 때 다른 동료들과 상호 작용 하지 않는다. 두 개의 포크를 모두 얻어야 식사가 가능하며 포크는 자신과 자신의 왼쪽, 오른쪽 철학자 사이에 있는 젓가락을 잡을 수 있다. 다른 사람의 손에 들어간 젓가락을 집을 수 없고, 배고픈 철학자가 동시에 젓가락 두 개를 집으면 식사를 한다. 식사를 마치면 젓가락 두 개를 모두 놓고 다시 생각을 시작한다.
 
 - 세마포 해결안 (교착 상태 해결 안 됨)
@@ -216,7 +217,9 @@ n개의 버퍼로 구성된 풀(pool)이 있으며 각 버퍼는 한 항목(item
   - 커널은 여러 스레드 중 하나를 선택하여 dispatcher 객체를 사용할 수 있게 함
 
 - Mutex 예시
+
   ![mutex_dispatcher](/assets/img/resources/250710/mutex_dispatcher.png)
+
   - **signaled** 상태: 스레드는 mutex를 얻고 잠금을 수행
   - **nonsignaled** 상태: 스레드는 대기 큐로 이동
   - mutex는 오직 하나의 스레드만 소유할 수 있음
