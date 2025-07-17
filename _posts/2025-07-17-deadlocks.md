@@ -1,7 +1,7 @@
 ---
 title: "[운영체제 공룡책 10th] Ch.8 교착 상태"
 description: >-
-  deadlocks
+  Deadlocks
 date: 2025-07-17 13:00:00 +0900
 categories: [OS]
 tags: [OS, Operating System]
