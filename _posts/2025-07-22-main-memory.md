@@ -7,7 +7,7 @@ categories: [OS]
 tags: [OS, Operating System]
 pin: false
 image:
-  path: /assets/img/resources/os_cover.png
+  path: /assets/img/resources/OS/os_cover.png
 ---
 
 ## 1. 배경
@@ -22,7 +22,7 @@ image:
   - **Limit Register**: 접근 가능한 범위 (길이)
     - ex) Base = 1000, Limit = 500 → 접근 가능한 주소는 1000 ~ 1499
   - 범위를 벗어나는 접근 시 운영체제는 **트랩(trap)**을 발생시켜 예외 처리 수행
-    ![9.2](/assets/img/resources/250722/9.2.png){: width="500" .normal}
+    ![9.2](/assets/img/resources/OS/ch9/9.2.png){: width="500" .normal}
 
 ---
 
@@ -32,7 +32,7 @@ image:
 - **load** 시간: 실행 시 메모리 위치 변경 가능, 상대 주소 사용
 - **execution** 시간: 실행 중에도 위치 변경 가능, MMU 필요
 
-  ![9.3](/assets/img/resources/250722/9.3.png){: width="300" .normal }
+  ![9.3](/assets/img/resources/OS/ch9/9.3.png){: width="300" .normal }
 
 ---
 
@@ -48,16 +48,16 @@ image:
   | **논리 주소 공간** | 프로세스가 사용할 수 있는 주소 범위 (ex. 0~2³²-1) |
   | **물리 주소 공간** | 실제 RAM의 주소 범위 (ex. 0~2¹⁹-1) |
 
-- **MMU** 역할: 논리 → 물리 변환
+- **MMU (Memory Management Unit)** 역할: 논리 → 물리 변환
 
-  ![9.4](/assets/img/resources/250722/9.4.png){: width="400" .normal }
+  ![9.4](/assets/img/resources/OS/ch9/9.4.png){: width="400" .normal }
 
 - 변환 방식
   - 물리 주소 = 논리 주소 + base register
   - MMU가 base를 더하고, limit으로 범위 확인
   - 접근 허용 여부 판단
 
-    ![9.5](/assets/img/resources/250722/9.5.png){: width="400" .normal }
+    ![9.5](/assets/img/resources/OS/ch9/9.5.png){: width="400" .normal }
 
 ---
 
@@ -86,7 +86,7 @@ image:
 - 잘못된 주소 접근 방지를 위해 MMU는 `base` / `limit` 방식 사용
   - 접근 주소가 `base` ~ `base + limit` 범위 밖이면 트랩(trap) 발생
 
-  ![9.6](/assets/img/resources/250722/9.6.png){: width="400" .normal }
+  ![9.6](/assets/img/resources/OS/ch9/9.6.png){: width="400" .normal }
 
 ---
 
@@ -97,7 +97,7 @@ image:
   - 처음에는 모든 메모리가 사용자 프로세스에 사용 가능, 하나의 큰 사용 가능한 메모리 블록인 **hole**로 간주
   - 각 프로세스가 메모리를 얼마나 요구하며, 사용 가능한 메모리 공간이 어디에 얼마나 있는지 고려하여 공간 할당함
 
-  ![9.7](/assets/img/resources/250722/9.7.png){: width="400" .normal }
+  ![9.7](/assets/img/resources/OS/ch9/9.7.png){: width="400" .normal }
 
 - 메모리 할당 문제에 대한 해결책
   - **최초 적합 (First-fit)**: 가장 처음 맞는 공간에 배치. 빠르지만 단편화 유발

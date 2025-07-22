@@ -7,7 +7,7 @@ categories: [OS]
 tags: [OS, Operating System]
 pin: false
 image:
-  path: /assets/img/resources/os_cover.png
+  path: /assets/img/resources/OS/os_cover.png
 ---
 
 ## 1. 배경
@@ -87,7 +87,7 @@ while (true)
 
 - pid를 배정할 때의 경쟁 조건
 
-  ![pid_race_condition](/assets/img/resources/250617/pid_race_condition.png){: width="450" }
+  ![pid_race_condition](/assets/img/resources/OS/ch6/pid_race_condition.png){: width="450" }
 
   - 커널 변수 `next_available_pid`에 경쟁 조건이 있으며, 이 변수는 다음 사용 가능한 프로세스 식별자의 값을 나타냄
   - 상호 배제가 제공되지 않으면 동일한 프로세스 식별자 번호가 두 개의 다른 프로세스에 배정될 수 있음

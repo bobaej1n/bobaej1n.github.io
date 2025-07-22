@@ -7,7 +7,7 @@ categories: [OS]
 tags: [OS, Operating System]
 pin: false
 image:
-  path: /assets/img/resources/os_cover.png
+  path: /assets/img/resources/OS/os_cover.png
 ---
 
 ## 1. Mutex Locks
@@ -202,7 +202,7 @@ image:
     - 조건 변수 연산
       - x.wait() : x 조건을 만족할 때까지 현재 프로세스 대기
       - x.signal() : x 조건을 기다리는 프로세스 중 하나를 깨움  
-        ![monitor](/assets/img/resources/250701/monitor.png){: width="350" }          
+        ![monitor](/assets/img/resources/OS/ch6/monitor.png){: width="350" }          
     - 조건 변수의 signal 처리 방식에 따른 두 가지 전략
       1. **Signal and wait**
         - P가 Q를 깨우면 P는 일시 정지 상태가 됨

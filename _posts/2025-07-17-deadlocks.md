@@ -7,7 +7,7 @@ categories: [OS]
 tags: [OS, Operating System]
 pin: false
 image:
-  path: /assets/img/resources/os_cover.png
+  path: /assets/img/resources/OS/os_cover.png
 ---
 
 ## 1. 시스템 모델
@@ -83,7 +83,7 @@ image:
 	4. **Circular Wait** (환형 대기): 프로세스들이 원형으로 자원을 기다림
 
 - **Resource Allocation Graph** (RAG, 자원할당그래프)
-	![RAG_1](/assets/img/resources/250717/RAG_1.png){: width="600" }
+	![RAG_1](/assets/img/resources/OS/ch8/RAG_1.png){: width="600" }
 	- 교착상태를 시각적으로 판단하기 위한 그래프 모델
 	- 구성 요소
 		- **정점(Vertex)**
@@ -101,11 +101,11 @@ image:
 
 		- 교착 상태를 갖는 RAG
 
-			![RAG_2](/assets/img/resources/250717/RAG_2.png){: width="300" .normal }
+			![RAG_2](/assets/img/resources/OS/ch8/RAG_2.png){: width="300" .normal }
 
 		- 사이클이 있지만 교착 상태가 아닌 RAG
 
-			![RAG_3](/assets/img/resources/250717/RAG_3.png){: width="300" .normal}
+			![RAG_3](/assets/img/resources/OS/ch8/RAG_3.png){: width="300" .normal}
 
 			- 왜 교착 상태가 아닌가? → 프로세스 T4가 R2를 방출할 수 있어, 해당 자원이 T3에 할당될 수 있게되어 사이클이 없어짐
 
@@ -134,7 +134,7 @@ image:
 ## 6. 교착 상태 회피
 
 #### 1) **Safe State**
-![safe_unsafe_deadlock_space](/assets/img/resources/250717/safe_unsafe_deadlock_space.png){: width="250" .normal }
+![safe_unsafe_deadlock_space](/assets/img/resources/OS/ch8/safe_unsafe_deadlock_space.png){: width="250" .normal }
 - 안전 상태 (safe state): 시스템이 safe state에 있다면, 모든 프로세스가 교착상태 없이 자원을 확보하고 종료될 수 있음
 - 안전 순서 (safe sequence): 프로세스들이 자원을 받고 실행될 수 있는 순서
 - 불안전 상태(unsafe state): 반드시 deadlock을 의미하지는 않지만, 발생할 가능성이 있는 상태
@@ -150,7 +150,7 @@ image:
 	- 단일 인스턴스 자원에만 적용됨
 	- 불안전 상태의 자원 할당 그래프
 
-		![safe_unsafe_deadlock_space](/assets/img/resources/250717/unsafe_RAG.png){: width="300" height= "300" .normal}
+		![safe_unsafe_deadlock_space](/assets/img/resources/OS/ch8/unsafe_RAG.png){: width="300" height= "300" .normal}
 
 
 #### 3) **Banker's Algorithm**
